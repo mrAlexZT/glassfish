@@ -1,4 +1,4 @@
-FROM devbeta/glassfish:5.1.0-openjdk-1.8.0_222
+FROM devbeta/glassfish:5.0.1-openjdk-1.8.0_191
 
 LABEL name="ash+GlassFish"
 LABEL nodeType="ash-glassfish"
