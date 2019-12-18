@@ -4,3 +4,4 @@ LABEL name="ash+GlassFish"
 LABEL nodeType="ash-glassfish"
 LABEL nodeTypeAlias=""
 LABEL cluster="https://raw.githubusercontent.com/annajel/glassfish/master/5.0/cluster.json" 
+ENV ON_ENV_INSTALL=https://raw.githubusercontent.com/annajel/glassfish-cluster/master/addons/auto-cluster.jps
