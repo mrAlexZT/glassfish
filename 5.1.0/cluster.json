@@ -28,7 +28,6 @@
     "validation": {
       "tag": "${clusterNode.tag}",
       "scalingMode": "STATEFUL",
-      "maxCount": 1
-    }
+     }
   }  
 }
