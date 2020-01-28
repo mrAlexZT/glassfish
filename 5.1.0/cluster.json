@@ -1,6 +1,6 @@
 {
   "convertable" : true,
-  "jps"         : "https://raw.githubusercontent.com/annajel/glassfish-cluster/master/addons/auto-cluster.jps",  
+  "jps"         : "https://raw.githubusercontent.com/jelastic-jps/glassfish/master/addons/auto-cluster.jps",  
   "defaultState": false,
     
    "compatibleAddons": ["glassfish-cluster-addon"],
@@ -13,7 +13,7 @@
   "description" : "Interconnection of GlassFish servers with pre-configured session replication and load balancing. <a href='https://jelastic.com/blog/glassfish-payara-auto-clustering-cloud-hosting/'>Learn More</a><img width='290' height='156' src='https://raw.githubusercontent.com/jelastic/icons/master/glassfish/jelastic/images/tip-auto-clustering.svg?sanitize=true'>",
   "skipOnEnvInstall": true,
   "validation": {
-    "extraNodesCount": 1
+    "extraNodesCount": 2
   },
   "extraNodes": {
     "nodeGroup": "das",
@@ -21,12 +21,14 @@
     "fixedCloudlets": "${clusterNode.fixedCloudlets}",
     "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
     "displayName": "DAS",
+    "count": 1,
     "isClusterSupport": false,
     "isDeploySupport": false,
     "startService": false,
     "validation": {
       "tag": "${clusterNode.tag}",
       "scalingMode": "STATEFUL",
-     }
+      "maxCount": 1
+    }
   }  
 }
