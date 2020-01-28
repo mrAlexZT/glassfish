@@ -21,7 +21,6 @@
     "fixedCloudlets": "${clusterNode.fixedCloudlets}",
     "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
     "displayName": "DAS",
-    "count": 1,
     "isClusterSupport": false,
     "isDeploySupport": false,
     "startService": false,
