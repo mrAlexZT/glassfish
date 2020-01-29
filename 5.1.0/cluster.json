@@ -14,7 +14,7 @@
   "skipOnEnvInstall": true,
   "validation": {
     "minCount": 2,
-    "maxCount": 2,
+    "maxCount": 3,
     "extraNodesCount": 1
   }
 }
