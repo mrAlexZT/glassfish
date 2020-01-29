@@ -4,6 +4,7 @@
   "defaultState": false,
     
    "compatibleAddons": ["glassfish-cluster-addon"],
+   "targetRegions" : vz6,
    "nodeGroupData": {
     "skipNodeEmails": true,
     "scalingMode": "STATEFUL",
