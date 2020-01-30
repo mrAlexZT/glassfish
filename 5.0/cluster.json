@@ -22,8 +22,8 @@
     "isClusterSupport": false,
     "isDeploySupport": false,
     "validation": {
-      "tag": "${clusterNode.tag}",
-      "scalingMode": "STATEFUL",
+      "tag": "5.0.35",
+      "scalingMode": "NEW",
       "maxCount": 1
     }
   }
