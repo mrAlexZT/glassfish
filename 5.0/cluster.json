@@ -17,16 +17,15 @@
     },
    "extraNodes": {
     "nodeGroup": "das",
-    "nodeType": "${clusterNode.nodeType}",
-    "fixedCloudlets": "${clusterNode.fixedCloudlets}",
-    "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
+    "nodeType": "${clusterNode.nodeType}",     
+    "cloudlets": 32,
     "displayName": "DAS",
     "count": 1,
-    "isClusterSupport": false,
+    "isClusterSupport": true,
     "isDeploySupport": false,
     "validation": {
       "tag": "${clusterNode.tag}",
-      "scalingMode": "STATEFUL",
+      "scalingMode": "STATELESS",
       "maxCount": 1
     }
   }
