@@ -23,7 +23,7 @@
     "isDeploySupport": false,
     "validation": {
       "tag": "${clusterNode.tag}",
-      "scalingMode": "STATELESS",
+      "scalingMode": "CLONE",
       "maxCount": 1
     }
   }
