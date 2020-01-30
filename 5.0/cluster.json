@@ -15,7 +15,8 @@
    "validation": {
     "minCount": 2
     },
-   "extraNodes": {
+   "extraNodes": [
+    {
     "nodeGroup": "das",
     "nodeType": "${clusterNode.nodeType}",     
     "cloudlets": 32,
@@ -28,5 +29,14 @@
       "scalingMode": "STATELESS",
       "maxCount": 1
     }
-  }
+  },
+    {
+         "nodeType": "bl",
+         "nodeGroup": "apache-lb",
+         "cloudlets": 4,
+         "displayName": "Apache-Balancer",
+         "scalingMode": "CLONE",
+         "tag": "2.4.41"
+    }
+  ]
 }
