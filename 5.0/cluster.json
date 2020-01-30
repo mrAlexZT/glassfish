@@ -20,9 +20,9 @@
       "count": 1,
       "isDeploySupport": false,
       "validation": {
-      "tag": "${clusterNode.tag}",
-      "scalingMode": "NEW",
-      "maxCount": 1
+        "tag": "${clusterNode.tag}",
+        "scalingMode": "NEW",
+        "maxCount": 1
     }
   }
 }
