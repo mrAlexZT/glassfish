@@ -14,25 +14,25 @@
   "skipOnEnvInstall": true,
   "extraNodes": [
     {
-    "nodeGroup": "das",
-    "nodeType": "${clusterNode.nodeType}",     
-    "cloudlets": 32,
-    "displayName": "DAS",
-    "count": 1,
-    "isDeploySupport": false,
-    "validation": {
+      "nodeGroup": "das",
+      "nodeType": "${clusterNode.nodeType}",     
+      "cloudlets": 32,
+      "displayName": "DAS",
+      "count": 1,
+      "isDeploySupport": false,
+      "validation": {
       "tag": "${clusterNode.tag}",
       "scalingMode": "NEW",
       "maxCount": 1
     }
   },
     {
-         "nodeType": "bl",
-         "nodeGroup": "apache-lb",
-         "cloudlets": 4,
-         "displayName": "Apache-Balancer",
-         "scalingMode": "CLONE",
-         "tag": "2.4.41"
+       "nodeType": "bl",
+       "nodeGroup": "apache-lb",
+       "cloudlets": 4,
+       "displayName": "Apache-Balancer",
+       "scalingMode": "CLONE",
+       "tag": "2.4.41"
     }
   ]
 }
