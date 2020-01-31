@@ -26,21 +26,35 @@
       "maxCount": 1
     }
   },
-     {
-    "nodeType": "dockerzZ",
-    "nodeGroup": "docker3",
+    {
+    "nodeType": "apache-lb",
+    "nodeGroup": "bl2",
     "count": 1,
-    "restartDelay": 50,
-    "diskLimit": 30,
-    "displayName": "Docker WP",
-    "scalingMode": "CLONE",
-    "fixedCloudlets": 10,
-    "flexibleCloudlets": 32,
-    "image": "wordpress",
-    "mission": "docker",
-     "links": [
-      "cp:glass"      
-    ]
+    "restartDelay": 30,
+    "diskLimit": 50,
+    "extip": 0,
+    "extipv6": 0,
+    "displayName": "Load Balancer 2",
+    "scalingMode": "STATEFUL",
+    "tag": "2.4.41",
+    "fixedCloudlets": 1,
+    "flexibleCloudlets": 2,
+    "order": 21
+  },
+  {
+    "nodeType": "maven",
+    "nodeGroup": "build2",
+    "count": 1,
+    "restartDelay": 30,
+    "diskLimit": 50,
+    "extip": 0,
+    "extipv6": 0,
+    "displayName": "Build Node 2",
+    "scalingMode": "STATELESS",
+    "tag": "3.6.3-zulujdk-8.0.242",
+    "fixedCloudlets": 1,
+    "flexibleCloudlets": 16,
+    "order": 22
   }
 ]
 }
