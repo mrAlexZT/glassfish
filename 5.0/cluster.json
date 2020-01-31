@@ -41,37 +41,6 @@
      "links": [
       "cp:glass"      
     ]
-  },
-    {
-    "nodeType": "apache-lb",
-    "nodeGroup": "bl2",
-    "count": 1,
-    "restartDelay": 30,
-    "diskLimit": 50,
-    "extip": 0,
-    "extipv6": 0,
-    "displayName": "Load Balancer 2",
-    "scalingMode": "STATEFUL",
-    "tag": "2.4.41",
-    "fixedCloudlets": 4,
-    "flexibleCloudlets": 8,
-    "links": [
-      "cp:gf"
-    ]
-  },
-  {
-    "nodeType": "maven",
-    "nodeGroup": "build2",
-    "count": 1,
-    "restartDelay": 30,
-    "diskLimit": 50,
-    "extip": 0,
-    "extipv6": 0,
-    "displayName": "Build Node 2",
-    "scalingMode": "STATELESS",
-    "tag": "3.6.3-zulujdk-8.0.242",
-    "fixedCloudlets": 10,
-    "flexibleCloudlets": 32,
-   }
+  }
 ]
 }
