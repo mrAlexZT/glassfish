@@ -27,7 +27,7 @@
     }
   },
      {
-    "nodeType": "docker",
+    "nodeType": "dockerzZ",
     "nodeGroup": "docker3",
     "count": 1,
     "restartDelay": 50,
