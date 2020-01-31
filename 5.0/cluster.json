@@ -6,7 +6,7 @@
    "compatibleAddons": ["glassfish-cluster-addon"],
    "nodeGroupData": {
     "skipNodeEmails": true,
-    "scalingMode": "NEW",
+    "scalingMode": "CLONE",
     "adminUrl": "",
     "isResetServicePassword": false
   },
@@ -22,7 +22,7 @@
     "isClusterSupport": false,
     "isDeploySupport": false,
     "validation": {
-      "tag": "5.10",
+      "tag": "${clusterNode.tag}",
       "scalingMode": "NEW",
       "maxCount": 1
     }
