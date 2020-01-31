@@ -56,7 +56,9 @@
     "tag": "2.4.41",
     "fixedCloudlets": 1,
     "flexibleCloudlets": 2,
-    "order": 21
+    "links": [
+      "cp:gf"
+    ]
   },
   {
     "nodeType": "maven",
@@ -71,7 +73,6 @@
     "tag": "3.6.3-zulujdk-8.0.242",
     "fixedCloudlets": 1,
     "flexibleCloudlets": 16,
-    "order": 22
-  }
+   }
 ]
 }
