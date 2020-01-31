@@ -39,8 +39,7 @@
     "image": "wordpress",
     "mission": "docker",
      "links": [
-      "db:DB",
-      "memcached:MEMCACHED"
+      "cp:glass"      
     ]
   },
     {
@@ -54,8 +53,8 @@
     "displayName": "Load Balancer 2",
     "scalingMode": "STATEFUL",
     "tag": "2.4.41",
-    "fixedCloudlets": 1,
-    "flexibleCloudlets": 2,
+    "fixedCloudlets": 4,
+    "flexibleCloudlets": 8,
     "links": [
       "cp:gf"
     ]
@@ -71,8 +70,8 @@
     "displayName": "Build Node 2",
     "scalingMode": "STATELESS",
     "tag": "3.6.3-zulujdk-8.0.242",
-    "fixedCloudlets": 1,
-    "flexibleCloudlets": 16,
+    "fixedCloudlets": 10,
+    "flexibleCloudlets": 32,
    }
 ]
 }
