@@ -26,6 +26,23 @@
       "maxCount": 1
     }
   },
+     {
+    "nodeType": "docker",
+    "nodeGroup": "docker3",
+    "count": 1,
+    "restartDelay": 50,
+    "diskLimit": 30,
+    "displayName": "Docker WP",
+    "scalingMode": "CLONE",
+    "fixedCloudlets": 10,
+    "flexibleCloudlets": 32,
+    "image": "wordpress",
+    "mission": "docker",
+     "links": [
+      "db:DB",
+      "memcached:MEMCACHED"
+    ]
+  },
     {
     "nodeType": "apache-lb",
     "nodeGroup": "bl2",
