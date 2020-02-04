@@ -19,6 +19,7 @@
       "cloudlets": 32,
       "displayName": "DAS",
       "count": 1,
+      "startService": false,
       "isDeploySupport": false,
       "validation": {
        "tag": "${clusterNode.tag}",
