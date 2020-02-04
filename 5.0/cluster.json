@@ -21,7 +21,7 @@
       "count": 1,
       "fixedCloudlets": "${clusterNode.fixedCloudlets}",
       "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
-      "startService": "false",
+      "startService": false,
       "isClusterSupport": false,
       "isDeploySupport": false,
       "validation": {
@@ -41,7 +41,7 @@
     "displayName": "Load Balancer 2",
     "scalingMode": "STATEFUL",
     "tag": "2.4.41",
-    "startService": "false",
+    "startService": false,
     "fixedCloudlets": 1,
     "flexibleCloudlets": 2   
   },
@@ -53,7 +53,7 @@
     "diskLimit": 50,
     "extip": 0,
     "extipv6": 0,
-    "startService": "false",
+    "startService": false,
     "displayName": "Build Node 2",
     "scalingMode": "STATELESS",
     "tag": "3.6.3-zulujdk-8.0.242",
