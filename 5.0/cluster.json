@@ -38,8 +38,6 @@
     "count": 1,
     "restartDelay": 30,
     "diskLimit": 50,
-    "extip": 1,
-    "extipv6": 0,
     "scalingMode": "STATEFUL",
     "tag": "7.7",
     "fixedCloudlets": 1,
