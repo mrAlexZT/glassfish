@@ -46,14 +46,6 @@
       "/master",
       "/local"
       ],
-    "volumeMounts": {
-      "/example-path": {
-      "sourcePath": "",
-      "sourceNodeId": 0,
-      "sourceNodeGroup": "",
-      "sourceHost": "",
-      "readOnly": true
-      }
     },
     "env": {
       "JELASTIC_PORTS": "1111, 2222, 3333, 4444"
