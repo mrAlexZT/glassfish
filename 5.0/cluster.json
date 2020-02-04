@@ -46,13 +46,12 @@
       "/master",
       "/local"
       ],
-    },
     "env": {
       "JELASTIC_PORTS": "1111, 2222, 3333, 4444"
     },
     "links": [
       "cp:gf-test"
     ]
-  },
+  }
  ]
 }
