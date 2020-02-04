@@ -38,7 +38,7 @@
     "flexibleCloudlets": 8,
     "image": "mysql",
     "mission": "docker",
-    "startService": true,
+    "startService": false,
     "cmd": "/test/command",
     "volumes": [
       "/external",
