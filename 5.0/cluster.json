@@ -26,21 +26,41 @@
       "maxCount": 1
     }
   },
-     {
+    {
     "nodeType": "docker",
-    "nodeGroup": "docker3",
+    "nodeGroup": "docker2",
     "count": 1,
-    "restartDelay": 50,
-    "diskLimit": 30,
-    "displayName": "Docker WP",
-    "scalingMode": "CLONE",
-    "fixedCloudlets": 10,
-    "flexibleCloudlets": 32,
-    "image": "wordpress",
+    "diskLimit": "1T",
+    "extipv6": true,
+    "displayName": "Docker MySQL",
+    "scalingMode": "NEW",
+    "fixedCloudlets": 2,
+    "flexibleCloudlets": 8,
+    "image": "mysql",
     "mission": "docker",
-     "links": [
-      "cp:glass"      
+    "startService": true,
+    "cmd": "/test/command",
+    "volumes": [
+      "/external",
+      "/data",
+      "/master",
+      "/local"
+      ],
+    "volumeMounts": {
+      "/example-path": {
+      "sourcePath": "",
+      "sourceNodeId": 0,
+      "sourceNodeGroup": "",
+      "sourceHost": "",
+      "readOnly": true
+      }
+    },
+    "env": {
+      "JELASTIC_PORTS": "1111, 2222, 3333, 4444"
+    },
+    "links": [
+      "cp:gf-test"
     ]
-  }
+  },
  ]
 }
