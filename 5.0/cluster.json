@@ -17,10 +17,12 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "cloudlets": 32,
+      "fixedCloudlets": "${clusterNode.fixedCloudlets}",
+      "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
       "displayName": "DAS",
       "count": 1,
       "isDeploySupport": false,
+      "isClusterSupport": false,
       "validation": {
        "tag": "${clusterNode.tag}",
        "scalingMode": "NEW",
@@ -32,7 +34,7 @@
     "nodeGroup": "docker2",
     "count": 1,
     "diskLimit": "1T",
-    "extipv6": true,
+    "extipv6": 3,
     "displayName": "Docker MySQL",
     "scalingMode": "NEW",
     "fixedCloudlets": 2,
