@@ -29,36 +29,21 @@
        "maxCount": 1,
        "targetRegions": {
         "type": ["vz7"]
-     },
-      }
-    },
-    {
-    "nodeType": "docker",
-    "nodeGroup": "docker2",
+     }
+    }
+  },
+  {
+    "nodeType": "centos-vps",
+    "nodeGroup": "vds",
     "count": 1,
-    "diskLimit": "1T",
-    "extipv6": 3,
-    "displayName": "Docker MySQL",
-    "scalingMode": "NEW",
-    "fixedCloudlets": 2,
-    "flexibleCloudlets": 8,
-    "image": "mysql",
-    "mission": "docker",
-    "startService": true,
-    "cmd": "/test/command",
-    "volumes": [
-      "/external",
-      "/data",
-      "/master",
-      "/local"
-      ],
-    "env": {
-      "JELASTIC_PORTS": "1111, 2222, 3333, 4444"
-    },
-    "links": [
-      "cp:gf"
-    ]
+    "restartDelay": 30,
+    "diskLimit": 50,
+    "extip": 1,
+    "extipv6": 0,
+    "scalingMode": "STATEFUL",
+    "tag": "7.7",
+    "fixedCloudlets": 1,
+    "flexibleCloudlets": 4
   }
  ]
-}
 }
