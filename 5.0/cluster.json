@@ -28,7 +28,7 @@
        "scalingMode": "NEW",
        "maxCount": 1,
        "targetRegions": {
-        "type": ["vz7"]
+        "type": ["vz6"]
      }
     }
   },
