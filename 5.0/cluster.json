@@ -26,7 +26,10 @@
       "validation": {
        "tag": "${clusterNode.tag}",
        "scalingMode": "NEW",
-       "maxCount": 1
+       "maxCount": 1,
+       "targetRegions": {
+        "type": ["vz7"]
+     },
       }
     },
     {
