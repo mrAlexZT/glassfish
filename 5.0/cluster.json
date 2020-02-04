@@ -16,9 +16,10 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "cloudlets": 32,
       "displayName": "DAS",
       "count": 1,
+      "fixedCloudlets": "${clusterNode.fixedCloudlets}",
+      "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
       "isClusterSupport": false,
       "isDeploySupport": false,
       "validation": {
@@ -39,8 +40,7 @@
     "scalingMode": "STATEFUL",
     "tag": "2.4.41",
     "fixedCloudlets": 1,
-    "flexibleCloudlets": 2,
-    "order": 21
+    "flexibleCloudlets": 2   
   },
   {
     "nodeType": "maven",
@@ -54,8 +54,7 @@
     "scalingMode": "STATELESS",
     "tag": "3.6.3-zulujdk-8.0.242",
     "fixedCloudlets": 1,
-    "flexibleCloudlets": 16,
-    "order": 22
+    "flexibleCloudlets": 16   
   }
 ]
 }
