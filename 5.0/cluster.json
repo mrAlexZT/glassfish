@@ -21,14 +21,13 @@
       "flexibleCloudlets": 32,
       "diskLimit": "1T",
       "displayName": "DAS",
-      "count": 3,
+      "count": 1,
       "extip": 2,
       "isDeploySupport": false,
       "isClusterSupport": false,
       "validation": {
        "tag": "${clusterNode.tag}",
-       "scalingMode": "NEW",
-       "maxCount": 1,
+       "scalingMode": "NEW"      
     }
   }
  ]
