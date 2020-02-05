@@ -25,16 +25,16 @@
       "extip": 1,
       "isDeploySupport": false,
       "isClusterSupport": false,
-      "recommended": {
-        "cloudlets": 8
-       }
       "validation": {
        "tag": "${clusterNode.tag}",
-       "scalingMode": "NEW"      
+       "scalingMode": "NEW",
+        "setGlobals": {
+           "recCloudlets": 8
+       }
     }
   }
  ],
   "recommended": {
-    "cloudlets": 8
+    "cloudlets": "${globals.recCloudlets}"
   }
 }
