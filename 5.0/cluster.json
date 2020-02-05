@@ -17,26 +17,28 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "fixedCloudlets": 2,
-      "flexibleCloudlets": 10,
-      "diskLimit": "1T",
+      "fixedCloudlets": "${clusterNode.fixedCloudlets}",
+      "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
       "displayName": "DAS",
       "count": 1,
-      "extip": 1,
       "isDeploySupport": false,
       "isClusterSupport": false,
       "validation": {
-        "rules": {
-            "setGlobals": {
-               "recCloudlets": 8
-          }
-        },
-        "tag": "${clusterNode.tag}",
-        "scalingMode": "NEW"
+       "tag": "${clusterNode.tag}",
+       "scalingMode": "NEW",
+       "maxCount": 1
      }
-   }
- ],
-  "recommended": {
-    "cloudlets": "${globals.recCloudlets}"
+  },
+  {
+    "nodeType": "centos-vps",
+    "nodeGroup": "vds",
+    "count": 1,
+    "restartDelay": 30,
+    "diskLimit": 50,
+    "scalingMode": "STATEFUL",
+    "tag": "7.7",
+    "fixedCloudlets": 1,
+    "flexibleCloudlets": 4
   }
+ ]
 }
