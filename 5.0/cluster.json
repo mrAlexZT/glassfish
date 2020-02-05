@@ -22,6 +22,7 @@
       "diskLimit": "1T",
       "displayName": "DAS",
       "count": 1,
+      "extip": 1,
       "isDeploySupport": false,
       "isClusterSupport": false,
       "validation": {
