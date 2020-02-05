@@ -26,13 +26,15 @@
       "isDeploySupport": false,
       "isClusterSupport": false,
       "validation": {
-       "tag": "${clusterNode.tag}",
-       "scalingMode": "NEW",
-        "setGlobals": {
-           "recCloudlets": 8
-       }
-    }
-  }
+        "rules": {
+            "setGlobals": {
+               "recCloudlets": 8
+          }
+        },
+        "tag": "${clusterNode.tag}",
+        "scalingMode": "NEW"
+     }
+   }
  ],
   "recommended": {
     "cloudlets": "${globals.recCloudlets}"
