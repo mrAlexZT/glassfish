@@ -25,7 +25,10 @@
       "extip": 1,
       "isDeploySupport": false,
       "isClusterSupport": false,
-       "validation": {
+      "recommended": {
+        "cloudlets": 8
+       }
+      "validation": {
        "tag": "${clusterNode.tag}",
        "scalingMode": "NEW"      
     }
@@ -34,5 +37,4 @@
   "recommended": {
     "cloudlets": 8
   }
-
 }
