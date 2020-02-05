@@ -25,10 +25,14 @@
       "extip": 1,
       "isDeploySupport": false,
       "isClusterSupport": false,
-      "validation": {
+       "validation": {
        "tag": "${clusterNode.tag}",
        "scalingMode": "NEW"      
     }
   }
- ]
+ ],
+  "recommended": {
+    "cloudlets": 8
+  }
+
 }
