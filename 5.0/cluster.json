@@ -17,8 +17,8 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "fixedCloudlets": 6,
-      "flexibleCloudlets": 32,
+      "fixedCloudlets": 2,
+      "flexibleCloudlets": 10,
       "diskLimit": "1T",
       "displayName": "DAS",
       "count": 1,
