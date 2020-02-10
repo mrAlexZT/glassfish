@@ -6,7 +6,7 @@
       "count": 1,
       "fixedCloudlets": "${clusterNode.fixedCloudlets}",
       "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
-      "startService": true,
+      "startService": false,
       "isClusterSupport": false,
       "isDeploySupport": false,
       "validation": {
