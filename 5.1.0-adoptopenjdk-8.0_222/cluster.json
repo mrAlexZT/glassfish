@@ -1,0 +1,48 @@
+{
+  "convertable" : true,
+  "jps"         : "https://raw.githubusercontent.com/dimkadt/glassfish/master/addons/auto-cluster.jps",  
+  "defaultState": false,
+    
+   "compatibleAddons": ["glassfish-cluster-addon"],
+   "nodeGroupData": {
+    "skipNodeEmails": true,
+    "scalingMode": "STATEFUL",
+    "adminUrl": "",
+    "isResetServicePassword": false
+  },
+  "description" : "Interconnection of GlassFish servers with pre-configured session replication and load balancing. <a href='https://jelastic.com/blog/glassfish-payara-auto-clustering-cloud-hosting/'>Learn More</a><img width='290' height='156' src='https://raw.githubusercontent.com/jelastic/icons/master/glassfish/jelastic/images/tip-auto-clustering.svg?sanitize=true'>",
+  "skipOnEnvInstall": true,
+  "extraNodes": [
+    {
+      "nodeGroup": "das",
+      "nodeType": "${clusterNode.nodeType}",     
+      "displayName": "DAS",
+      "count": 1,
+      "fixedCloudlets": "${clusterNode.fixedCloudlets}",
+      "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
+      "startService": false,
+      "isClusterSupport": false,
+      "isDeploySupport": false,
+      "validation": {
+      "tag": "${clusterNode.tag}",
+      "scalingMode": "NEW",
+      "maxCount": 1
+    }
+  },
+    {
+    "nodeType": "maven",
+    "nodeGroup": "build2",
+    "count": 1,
+    "restartDelay": 30,
+    "diskLimit": 50,
+    "extip": 0,
+    "extipv6": 0,
+    "startService": false,
+    "displayName": "Build Node 2",
+    "scalingMode": "STATELESS",
+    "tag": "3.6.3-zulujdk-8.0.242",
+    "fixedCloudlets": 1,
+    "flexibleCloudlets": 8   
+  }
+]
+}
