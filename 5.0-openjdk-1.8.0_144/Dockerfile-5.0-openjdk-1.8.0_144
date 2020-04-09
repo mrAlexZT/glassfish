@@ -3,5 +3,5 @@ FROM devbeta/glassfish:5.0-openjdk-1.8.0_144
 LABEL name="GlassFishA"
 LABEL nodeType="ash-glassfish"
 LABEL nodeTypeAlias=""
-LABEL cluster=true
+LABEL cluster="https://raw.githubusercontent.com/annajel/glassfish/master/5.0-openjdk-1.8.0_144/cluster.json"
 ENV ON_ENV_INSTALL=https://raw.githubusercontent.com/annajel/glassfish-cluster/master/addons/auto-cluster.jps
