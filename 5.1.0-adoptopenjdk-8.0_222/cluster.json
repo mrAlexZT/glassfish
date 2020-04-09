@@ -16,7 +16,7 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "displayName": "DAS",
+      "displayName": "DAS-test",
       "count": 1,
       "fixedCloudlets": "${clusterNode.fixedCloudlets}",
       "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
@@ -28,21 +28,6 @@
       "scalingMode": "NEW",
       "maxCount": 1
     }
-  },
-    {
-    "nodeType": "maven",
-    "nodeGroup": "build2",
-    "count": 1,
-    "restartDelay": 30,
-    "diskLimit": 50,
-    "extip": 0,
-    "extipv6": 0,
-    "startService": false,
-    "displayName": "Build Node 2",
-    "scalingMode": "STATELESS",
-    "tag": "3.6.3-zulujdk-8.0.242",
-    "fixedCloudlets": 1,
-    "flexibleCloudlets": 8   
   }
 ]
 }
