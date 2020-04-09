@@ -16,12 +16,12 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "displayName": "DAS-1",
+      "displayName": "DAS-A",
       "count": 1,
       "fixedCloudlets": "${clusterNode.fixedCloudlets}",
       "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
       "startService": false,
-      "isClusterSupport": true,
+      "isClusterSupport": false,
       "isDeploySupport": false,
       "validation": {
       "tag": "${clusterNode.tag}",
