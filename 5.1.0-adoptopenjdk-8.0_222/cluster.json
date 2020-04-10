@@ -16,7 +16,7 @@
     {
       "nodeGroup": "das",
       "nodeType": "${clusterNode.nodeType}",     
-      "displayName": "DAAAS",
+      "displayName": "DAS-A",
       "count": 1,
       "fixedCloudlets": "${clusterNode.fixedCloudlets}",
       "flexibleCloudlets": "${clusterNode.flexibleCloudlets}",
@@ -25,7 +25,7 @@
       "isDeploySupport": false,
       "validation": {
       "tag": "${clusterNode.tag}",
-      "scalingMode": "CLONE",
+      "scalingMode": "NEW",
       "maxCount": 1
     }
   }
