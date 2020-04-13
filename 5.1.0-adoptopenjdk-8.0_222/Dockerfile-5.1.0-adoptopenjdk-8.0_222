@@ -1,6 +1,6 @@
 FROM devbeta/glassfish:5.1.0-adoptopenjdk-8.0_222
 
-LABEL name="GlassFishA"
-LABEL nodeType="ash-glassfish"
+LABEL name="GlassFishOS"
+LABEL nodeType="os-glassfish"
 LABEL nodeTypeAlias=""
-LABEL cluster="https://raw.githubusercontent.com/annajel/glassfish/master/5.1.0-adoptopenjdk-8.0_222/cluster.json" 
+LABEL cluster="https://raw.githubusercontent.com/mrAlexZT/glassfish/master/5.1.0-adoptopenjdk-8.0_222/cluster.json" 
